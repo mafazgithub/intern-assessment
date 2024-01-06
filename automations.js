@@ -15,7 +15,18 @@ window.onclick = function (event) {
   if (event.target.matches(".execute-test")) {
     executeYourAutomation();
   }
+
+  if (event.target.matches(".artdeco-modal__content")) {
+    scrollDownToBottom();
+  }
 };
+
+function scrollDownToBottom() {
+  const reactionsModalContent = document.querySelector('.artdeco-modal__content');
+  if (reactionsModalContent) {
+    reactionsModalContent.scrollTop = reactionsModalContent.scrollHeight;
+  }
+}
 
 function performExampleAutomations() {
   let users = [];
