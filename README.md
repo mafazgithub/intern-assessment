@@ -1,10 +1,13 @@
 # Internship Assessment
 
 ## Workings and thought process
-The automation script is designed to streamline user interactions on a web page. It automatically opens a reactions modal and smoothly scrolls down to the bottom when triggered, ensuring a polished user experience. 
 
-The script's operation involves event handling to recognize user actions, such as clicking designated buttons. Once triggered, it orchestrates the opening of the reactions modal and employs a `scrollDownToBottom` 
 
-function for a refined scrolling animation. Additional features include example automations and executing specific ones, enhancing versatility. The development process focused on overcoming challenges, refining 
 
-scrolling behavior, and ensuring seamless integration with existing web page structures. The script aims to provide an efficient and user-friendly enhancement to web page interactions.
+Identified issues with standard events in modals, prompting the exploration of a `MutationObserver`. Faced limitations with the `MutationObserver` approach, leading to the adoption of a timer-based solution.
+
+ Implemented a timer to periodically check for content changes, allowing for a more reliable response. Prioritized adjustability by making the timer interval tunable, accommodating diverse page dynamics. Rigorously
+
+ tested the implementation to ensure consistent responses to dynamic content. Ensured code efficiency by adopting a concise and clear design. Embraced an iterative thought process, learning and adapting the 
+
+solution based on observed behaviors. Addressed broader aspects like event management and modular, scalable design. Future-proofed by designing for scalability and potential UI integrations.
